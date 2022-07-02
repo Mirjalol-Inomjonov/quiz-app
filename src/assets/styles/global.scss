@@ -1,0 +1,63 @@
+@import "tailwind";
+
+// reset all styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+input,
+input:focus-visible {
+  outline: none;
+}
+
+// container
+.container {
+  max-width: 1240px;
+  margin: 0px auto;
+  padding: 0 15px;
+
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 100%;
+  }
+}
+
+// scrollbar
+
+::-webkit-scrollbar-track {
+  background: #dfe2e7;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbced6;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a5c9d9;
+}
+
+.recapthaError {
+  iframe {
+    border: 1.6px solid red !important;
+  }
+}
