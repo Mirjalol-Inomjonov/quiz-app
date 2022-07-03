@@ -15,6 +15,16 @@ const router = createRouter({
       component: () => import("@/layouts/login.vue"),
     },
     {
+      path: "/create-new-test",
+      name: "create-new-test",
+      component: () => import("@/pages/createNewTest.vue"),
+    },
+    {
+      path: "/examen",
+      name: "examen",
+      component: () => import("@/pages/examen.vue"),
+    },
+    {
       path: "/:pathMatch(.*)*",
       name: "notFound",
       component: () => import("@/layouts/error.vue"),
